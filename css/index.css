@@ -1,0 +1,86 @@
+@font-face {
+  font-family: eutemia;
+  src: url(../assets/fonts/eutemia-i/Eutemia.ttf);
+}
+
+@font-face {
+  font-family: mrdafoe;
+  src: url(../assets/fonts/mr-dafoe/MrDafoe-Regular.ttf);
+}
+
+
+/* universal style for every tag */
+*{
+    padding:0;
+    margin: 0;
+}
+
+/* style for body */
+body{
+  overflow: hidden;
+  background-color:  #000;
+  height: 100vh;
+}
+
+/* heading */
+.bg-text-rainbow{
+  
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+}
+.title{
+  font-size: 20vh;
+  margin-top: 15vh;
+  font-family: eutemia;
+
+}
+
+.sub-title{
+  font-size: 10vh;
+  font-family: mrdafoe;
+  color:#0575E6 ;
+  text-align: center;
+}
+
+
+/* wave animation */
+/* .wrapper {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  overflow: hidden;
+} */
+
+.wrapper{
+  position: absolute;
+  left: 50%;
+  bottom: -60%;
+  transform: translate(-50%, -50%);
+}
+
+.wave {
+  width: 1000px;
+  height: 1025px;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  margin-left: -500px;
+  margin-top: -500px;
+  border-radius: 35%;
+  background: linear-gradient(to right,#00F260,#0575E6);
+  animation: wave 15s infinite linear;
+}
+
+@keyframes wave {
+  from { transform: rotate(0deg);}
+  from { transform: rotate(360deg);}
+}
